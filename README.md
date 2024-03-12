@@ -32,16 +32,42 @@
 <style>
     @media only screen and (max-width:390px) and  (max-height:900px){
         hr {
-            margin-top: end;
-            width: 70%;
+            margin-top: 100%;
+            width: 60%;
             
-        }
-        .bottom{
-            margin-bottom: 10%;
-            margin-top: 0%;
         }
         body{
             text-align: center;
+        }
+        p{
+            margin-bottom: 150%;
+        }
+    }
+    @media only screen and (max-width:500px) and  (max-height:900px){
+        hr {
+            margin-top: 100%;
+            width: 60%;
+            
+        }
+        body{
+            text-align: center;
+            
+        }
+        p{
+            margin-bottom: 150%;
+        }
+    }
+    @media only screen and (max-width:600px) and  (max-height:900px){
+        hr {
+            margin-top: 100%;
+            width: 60%;
+            
+        }
+        body{
+            text-align: center;
+        }
+        p{
+            margin-bottom: 150%;
         }
     }
 
