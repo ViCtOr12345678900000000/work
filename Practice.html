@@ -42,7 +42,7 @@
         background-repeat: no-repeat;
         background-position: center;
         background-attachment: fixed;
-        animation-duration: s;
+        animation-duration: 5s;
         animation-iteration-count: infinite;
         animation-name: changeBackground ;
     }
@@ -80,7 +80,7 @@
     hr{
         margin-top: 20%;
         text-align: center;
-        width: 50%;
+        width: 40%;
     }
     .bottom{
         text-align: center;
