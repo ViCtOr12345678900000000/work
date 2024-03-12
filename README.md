@@ -1,7 +1,4 @@
 <body id="background-change">
-    <h1>
-        <a href="https://github.com/ViCtOr12345678900000000/VC-STORES/">VC-STORES</a>
-    </h1>
     <div class="enter">
         <form action="Practice.html" target="_blank">
         <button type="submit" >Enter</button>
@@ -41,6 +38,9 @@
         
         
         
+    }
+    a{
+    text-align="center"
     }
     button{
         border-radius: 20px;
