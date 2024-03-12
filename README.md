@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang ="en">
     <head>
         <meta charset="UTF-8">
@@ -31,6 +30,47 @@
 
 
 <style>
+    @media only screen and (max-width:390px) and  (max-height:900px){
+        hr {
+            margin-top: 100%;
+            width: 60%;
+            
+        }
+        body{
+            text-align: center;
+        }
+        p{
+            margin-bottom: 150%;
+        }
+    }
+    @media only screen and (max-width:500px) and  (max-height:900px){
+        hr {
+            margin-top: 100%;
+            width: 60%;
+            
+        }
+        body{
+            text-align: center;
+            
+        }
+        p{
+            margin-bottom: 150%;
+        }
+    }
+    @media only screen and (max-width:600px) and  (max-height:900px){
+        hr {
+            margin-top: 100%;
+            width: 60%;
+            
+        }
+        body{
+            text-align: center;
+        }
+        p{
+            margin-bottom: 150%;
+        }
+    }
+
     @keyframes changeBackground{
         20% {background-image: url("https://i.pinimg.com/originals/85/6f/31/856f31d9f475501c7552c97dbe727319.jpg");}
         50% {background-image: url("https://www.wallpapersales.uk.com/wp-content/uploads/2018/11/82009.jpg");}
@@ -69,6 +109,7 @@
         height: 20px;
         background-color: inherit;
         text-align: center;
+        color: black;
         
         
         
@@ -76,11 +117,14 @@
     button{
         border-radius: 20px;
         background-color: inherit;
+        color: black;
         
     }
     hr{
-        margin-top: 20%;
-        width: 40%;
+        margin-top: 70%;
+        text-align: center;
+        
+        
     }
     .bottom{
         text-align: center;
