@@ -30,6 +30,21 @@
 
 
 <style>
+    @media only screen and (max-width:390px) and  (max-height:900px){
+        hr {
+            margin-top: end;
+            width: 70%;
+            
+        }
+        .bottom{
+            margin-bottom: 10%;
+            margin-top: 0%;
+        }
+        body{
+            text-align: center;
+        }
+    }
+
     @keyframes changeBackground{
         20% {background-image: url("https://i.pinimg.com/originals/85/6f/31/856f31d9f475501c7552c97dbe727319.jpg");}
         50% {background-image: url("https://www.wallpapersales.uk.com/wp-content/uploads/2018/11/82009.jpg");}
@@ -80,8 +95,9 @@
         
     }
     hr{
-        margin-top: 20%;
+        margin-top: 70%;
         text-align: center;
+        
         
     }
     .bottom{
