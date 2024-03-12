@@ -66,7 +66,7 @@
         border-radius: 50px;
         width: 200px;
         height: 20px;
-        background-color: inherit;
+        background-color: black;
         text-align: center;
         
         
@@ -74,7 +74,7 @@
     }
     button{
         border-radius: 20px;
-        background-color: inherit;
+        background-color: black;
         
     }
     hr{
