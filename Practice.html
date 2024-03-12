@@ -66,15 +66,17 @@
         border-radius: 50px;
         width: 200px;
         height: 20px;
-        background-color: black;
+        background-color: inherit;
         text-align: center;
+        color: black;
         
         
         
     }
     button{
         border-radius: 20px;
-        background-color: black;
+        background-color: inherit;
+        color: black;
         
     }
     hr{
