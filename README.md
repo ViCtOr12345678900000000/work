@@ -82,7 +82,7 @@
     hr{
         margin-top: 20%;
         text-align: center;
-        width: 40%;
+        
     }
     .bottom{
         text-align: center;
