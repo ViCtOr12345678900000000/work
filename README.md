@@ -1,4 +1,3 @@
-
 <html lang ="en">
     <head>
         <meta charset="UTF-8">
@@ -43,7 +42,7 @@
         background-repeat: no-repeat;
         background-position: center;
         background-attachment: fixed;
-        animation-duration: 5s;
+        animation-duration: s;
         animation-iteration-count: infinite;
         animation-name: changeBackground ;
     }
@@ -80,7 +79,8 @@
     }
     hr{
         margin-top: 20%;
-        width: 40%;
+        text-align: center;
+        width: 50%;
     }
     .bottom{
         text-align: center;
