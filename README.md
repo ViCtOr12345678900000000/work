@@ -1,8 +1,6 @@
 <body id="background-change">
     
-    <div class="title">
-        <p>VC STORES</p>
-    </div>
+
     <div class="enter">
         <form action="Practice.html" target="_blank">
         <button type="submit" >Enter</button>
@@ -25,10 +23,7 @@
         margin-bottom: 50px;
         margin-right: 5px;
     }
-    .title{
-        margin-top: 10%;
-        text-align: center;
-    }
+    
     p{
         font-size: xx-large;
         font-family: Arial, Helvetica, sans-serif;
