@@ -76,7 +76,7 @@
     }
     .welcome-text {
     font-size: 4em;
-    color: inherit;
+    color: blue;
     animation: animateText 3s ease-in-out infinite;
   }
 
