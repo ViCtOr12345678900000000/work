@@ -1,4 +1,5 @@
 <body id="background-change">
+    <h1 class="welcome-text">Welcome!</h1>
     <div class="enter">
         <form action="Practice.html" target="_blank">
         <button type="submit" >Enter</button>
@@ -73,5 +74,15 @@
         margin-right: 5px;
         margin-top: 20%;
     }
-    
+    .welcome-text {
+    font-size: 4em;
+    color: inherit;
+    animation: animateText 3s ease-in-out infinite;
+  }
+
+  @keyframes animateText {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+  }
 </style>
