@@ -8,8 +8,7 @@
 </body>
 <style>
     body{
-        background-image: url("![image](https://github.com/ViCtOr12345678900000000/VC-STORES/assets/87785874/4932e8c4-6f80-4415-9575-d9ce974a3f0e)
-");
+        background-image: url("https://coolbackgrounds.io/images/backgrounds/white/white-unsplash-9d0375d2.jpg");
         background-size:cover;
         background-repeat: no-repeat;
         background-position: center;
