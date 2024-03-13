@@ -8,7 +8,8 @@
 </body>
 <style>
     body{
-        background-image: url("[https://coolbackgrounds.io/images/backgrounds/white/white-unsplash-9d0375d2.jpg](https://icolorpalette.com/color/dim)");
+        background-image:
+    url("https://i.pinimg.com/originals/bc/3d/b4/bc3db4f51517257764fb80ef2f15b724.jpg");
         background-size:cover;
         background-repeat: no-repeat;
         background-position: center;
