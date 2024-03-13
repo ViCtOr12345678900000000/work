@@ -18,6 +18,16 @@
         <div class="title">
             <p>VC STORES</p>
         </div>
+        <div class="image-box">
+            <div class="images">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwfPAhrtegpsYGdM_3mUl0h_tx7hfrJ-MB5KebH1YO5A&s" >
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmEE2en7ZrjNro1s6ePdKBsn0d248UUB4hZA&usqp=CAU" alt="">
+                <img src=" https://c4.wallpaperflare.com/wallpaper/1006/681/284/4k-apocalypse-dark-background-black-wallpaper-preview.jpg" alt="">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBkKJNey8LfIbtdRAXHMU-IMwk6NTMuo5B9w&usqp=CAU" alt="">
+                <img src="https://png.pngtree.com/thumb_back/fh260/background/20210915/pngtree-geometric-pattern-white-gold-minimalist-creative-background-image_879782.jpg" alt="">
+            </div>
+        </div>
+
         <hr>
         <div class="bottom">
         <button type="submit">View Assets</button>
@@ -40,7 +50,7 @@
             text-align: center;
         }
         p{
-            margin-bottom: 150%;
+            margin-bottom: 10%;
         }
     }
     @media only screen and (max-width:500px) and  (max-height:900px){
@@ -54,7 +64,7 @@
             
         }
         p{
-            margin-bottom: 150%;
+            margin-bottom: 10%;
         }
     }
     @media only screen and (max-width:600px) and  (max-height:900px){
@@ -67,7 +77,7 @@
             text-align: center;
         }
         p{
-            margin-bottom: 150%;
+            margin-bottom: 30%;
         }
     }
 
@@ -87,6 +97,7 @@
         animation-iteration-count: infinite;
         animation-name: changeBackground ;
     }
+    
     .form{
         text-align: center;
         margin-top: 40px;
@@ -144,9 +155,72 @@
     }
     
 </style>
+
+
 <script>
 function myFunction() {
    var element = document.body;
    element.classList.toggle("dark-mode");
 }
 </script>
+
+<style>
+    .image-box{
+        width:100%;
+        height: 300px;
+        overflow:hidden;
+        margin: 0 auto;
+    }
+    .images{
+        display:inline-flex;
+        animation-name: scroll-images;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-play-state:running;
+        
+    }
+    .images img{
+        width: 100%;
+        height: 350px;
+        border: 20px;
+    }
+    @keyframes scroll-images{
+        0%{transform: translateX(0);}
+        50%{transform:translateX(-50%) ;}
+        75%{transform:translateX(-75%);}
+        100%{transform: translateX(-100%);}
+    }
+    @media only screen and (max-width:430px) and  (max-height:900px){
+        .images img{
+        width: 100%;
+        height: 55px;
+        border: 20px;
+    } 
+    @keyframes scroll-images{
+        0%{transform: translateX(0);}
+        50%{transform:translateY(0) ;}
+        100%{transform: translateX(-30%);}
+    }
+
+    }
+    @media only screen and (max-width:500px) and  (max-height:900px){
+        .images img{
+        width: 100%;
+        height: 55px;
+        border: 20px;
+    } 
+    @keyframes scroll-images{
+        0%{transform: translateX(0);}
+        50%{transform:translateY(0);}
+        100%{transform: translateX(-30%);}
+    }
+
+    }
+    @media only screen and (max-width:600px) and  (max-height:900px){
+        .images img{
+        width: 100%;
+        height: 50px;
+        border: 20px;
+    } 
+}
+</style>
