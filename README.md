@@ -50,6 +50,7 @@
         background-color: inherit;
         color: black;
         width: 200px;
+        margin-top:50%;
         height: 80px;
         
     }
