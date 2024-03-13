@@ -1,13 +1,10 @@
-<div class="repository-link>
-    VC-STORES
-</div>
-    
 <body id="background-change">
     <div class="enter">
         <form action="Practice.html" target="_blank">
         <button type="submit" >Enter</button>
         </form>
     </div>
+</body>
 <style>
     body{
         background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20210915/pngtree-geometric-pattern-white-gold-minimalist-creative-background-image_879782.jpg");
@@ -18,6 +15,7 @@
         animation-duration: 5s;
         animation-iteration-count: infinite;
         animation-name: changeBackground ;
+        text-align:center;
     }
     .form{
         text-align: center;
