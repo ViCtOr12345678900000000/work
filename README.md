@@ -8,7 +8,8 @@
 </body>
 <style>
     body{
-        background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20210915/pngtree-geometric-pattern-white-gold-minimalist-creative-background-image_879782.jpg");
+        background-image: url("![image](https://github.com/ViCtOr12345678900000000/VC-STORES/assets/87785874/4932e8c4-6f80-4415-9575-d9ce974a3f0e)
+");
         background-size:cover;
         background-repeat: no-repeat;
         background-position: center;
