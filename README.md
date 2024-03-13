@@ -1,3 +1,7 @@
+<div class="repository-link>
+    VC-STORES
+</div>
+    
 <body id="background-change">
     <div class="enter">
         <form action="Practice.html" target="_blank">
@@ -39,8 +43,8 @@
         
         
     }
-    a{
-    text-align="center"
+    .repository-link{
+    display:none;
     }
     button{
         border-radius: 20px;
