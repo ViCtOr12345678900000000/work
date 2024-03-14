@@ -1,23 +1,36 @@
-<html lang ="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body id="background-change">
-        <div class="darkmode">
-            <button onclick="myFunction()">Dark Mode</button>
-        </div>
+<body id="background-change">
+<header class="navbar">
+  <button class="menu-btn">
+    <span class="bar bar-top"></span>
+    <span class="bar bar-middle"></span>
+    <span class="bar bar-bottom"></span>
+  </button>
+  <div class="nav-center">
+    <h4>VC STORES</h4>
+  </div>
+  <div class="nav-right">
+  		<form action="https://www.google.com/search" method="get">
+                <input type="text" id="search" name="q" placeholder="Search">
+     <button type="subimt" class="search-btn">
+		
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Search_Icon.svg/1024px-Search_Icon.svg.png" alt="Search Icon">
+    </button>
+    </form>
+  </div>
+  <nav class="nav-content">
+    <ul>
+      <li><a href="#">Submenu 1</a></li>
+      <li><a href="#">Submenu 2</a></li>
+      <li><a href="#">Submenu 3</a></li>
+    </ul>
+  </nav>
+</header>
+<html>
 
-        <div class="form">
+        
+
+        
             
-            <form action="https://www.google.com/search" method="get">
-                <input type="text" id="search" name="q" placeholder="Enter your search query">
-                <button type="submit">Go!</button>
-              </form>
-            </div>
-        <div class="title">
-            <p>VC STORES</p>
-        </div>
         <div class="image-box">
             <div class="images">
                 <img src="https://www.kpop.exchange/cdn/shop/products/S4872dfd724904c38baed1a924f00b941X.jpg?v=1687298482" >
@@ -150,7 +163,7 @@
     
     .form{
         text-align: center;
-        margin-top: 40px;
+        margin-top: 80px;
         margin-bottom: 50px;
         margin-right: 5px;
     }
@@ -172,7 +185,7 @@
     
     input{
         border-radius: 50px;
-        width: 200px;
+        width: 50px;
         height: 20px;
         background-color: inherit;
         text-align: center;
@@ -207,21 +220,13 @@
     
 </style>
 
-
-<script>
-function myFunction() {
-   var element = document.body;
-   element.classList.toggle("dark-mode");
-}
-</script>
-
 <style>
     .image-box{
         width:100%;
         height: 300px;
         overflow:hidden;
+        margin-top:30%;
         margin-bottom:-50%;
-        
         
         
     }
@@ -240,6 +245,7 @@ function myFunction() {
         border: 20px;
         padding:30px;
         box-shadow: 0 5px 15px;
+        
     }
     @keyframes scroll-images{
         0%{transform: translateX(0);}
@@ -323,3 +329,99 @@ function myFunction() {
     font-size: small;
 }
 </style>
+<style>
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #inherit;
+  z-index:5;
+}
+
+.menu-btn {
+  width: 40px;
+  height: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bar {
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  background-color: #f1f1f1;
+  width: 100vw; /* Adjust width as needed */
+  z-index: 1;
+}
+
+.nav-content ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+}
+
+.nav-content li {
+  margin-bottom: 10px;
+}
+
+.nav-content a {
+  color: black;
+  text-decoration: none;
+}
+
+.search-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: ;
+}
+
+.search-btn img {
+  width: 10px;
+  height: 10px;
+  margin-right:25px;
+  
+}
+
+/* Hamburger button animation */
+
+.menu-btn.active .bar-top {
+  transform: translateY(8px) rotate(-45deg);
+}
+
+.menu-btn.active .bar-middle {
+  opacity: 0;
+}
+
+.menu-btn.active .bar-bottom {
+  transform: translateY(-8px) rotate(45deg);
+}
+
+/* Show navigation content on click */
+
+.menu-btn:hover .nav-content,
+.menu-btn.active .nav-content {
+  display: block;
+}
+
+
+</style>
+
+    
