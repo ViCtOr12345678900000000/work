@@ -28,6 +28,55 @@
             </div>
         </div>
 
+
+       <div class="content-background">
+            <div class="container">
+                <div class="box">
+                    <div class="contents">
+                        <img width="110%" height="60%" src="https://ng.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/16/358644/1.jpg?8510" alt="">
+                        <p id="price">Nice Body Hugs</p>
+                        <p id="price">₦ 30,000</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="contents">
+                        <img width="110%" height="80%" src="https://zuba.com.ng/wp-content/uploads/2016/06/Classic-Makeup-Matte-Lipsticks.jpg" alt="">
+                        <p id="price">Gucci Lipstick</p>
+                        <p id="price">₦ 50,000</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="contents">
+                        <img width="110%" height="80%" src="https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/87/8294032/1.jpg?7974" alt="">
+                        <p id="price">Brazilian Hair</p>
+                        <p id="price">₦ 120,000</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="contents">
+                        <img width="110%" height="80%" src="https://cdn.shopify.com/s/files/1/1176/1520/products/gold_plated_product_2587_1_450.jpg?v=1624950674" alt="">
+                        <p id="price">Custom Bracelet</p>
+                        <p id="price">₦ 50,000</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="contents">
+                        <img  width="110%" height="60%" src="https://ighomall.com/image/cache/catalog/products/wristwatches/valentine-deals/patek-phillipe-unisex-black-wrist-watch-unisex-black-wrist-watch-patek-phillipe-640x640.jpg" alt="">
+                        <p id="price">Watches</p>
+                        <p id="price">₦ 75,000</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="contents">
+                        <img  width="130%" height="60%" src="https://images.stockx.com/360/Air-Jordan-1-Retro-High-6-Rings/Images/Air-Jordan-1-Retro-High-6-Rings/Lv2/img01.jpg?fm=webp&auto=compress&w=480&dpr=2&updated_at=1634924956&h=320&q=60" alt="">
+                        <p id="price">Jordans</p>
+                        <p id="price">₦ 75,000</p>
+            </div>
+       </div>
+       
+<p>You can locate our stores using this map</p>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.604802968083!2d6.833550873644896!3d5.769863531464873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1043b3ff0dc492cb%3A0x90fbd7d2a6829e63!2sChukwuemeka%20Odumegwu%20Ojukwu%20University!5e0!3m2!1sen!2sng!4v1710344043157!5m2!1sen!2sng" width="400" height="300" style="border: 5px;;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
         <hr>
         <div class="bottom">
         <button type="submit">View Assets</button>
@@ -96,6 +145,7 @@
         animation-duration: 5s;
         animation-iteration-count: infinite;
         animation-name: changeBackground ;
+        text-align: center;
     }
     
     .form{
@@ -117,6 +167,7 @@
         font-size: xx-large;
         font-family: Arial, Helvetica, sans-serif;
         font-weight: bold;
+        margin: 20px;
     }
     
     input{
@@ -195,13 +246,14 @@ function myFunction() {
     @media only screen and (max-width:430px) and  (max-height:1000px){
         .images img{
         width: 100%;
-        height: 40%;
+        height: 55px;
         border: 20px;
     } 
+    .
     @keyframes scroll-images{
         0%{transform: translateX(0);}
         50%{transform:translateY(0) ;}
-        100%{transform:translateX(-100) ;}
+        100%{transform: translateX(-30%);}
     }
 
     }
@@ -224,5 +276,45 @@ function myFunction() {
         height: 50px;
         border: 20px;
     } 
+}
+
+.content-background{
+    background-color: inherit;
+    width: 100%;
+    margin-top: 50px;
+    height: 100%;
+}
+.container .box{
+    width: 250px;
+    height: ;
+    padding: 50px;
+    background-color: white;
+    box-shadow: 0 5px 15px;
+    border-radius: 4px;
+    margin: 50px;
+    box-sizing: border-box;
+    overflow: hidden;
+    color: black;
+    display: inline-flex;
+    margin-left: 55px;
+    object-fit: contain;
+    
+    
+}
+.container .box .contents{
+    position:relative;
+    z-index: 1;
+    transition: 0.5 ease;
+    text-align: center;
+    
+    
+}
+.container .box:hover .contents{
+    color: rgb(86, 144, 155);
+    text-align: center;
+}
+#price{
+    text-align: center;
+    font-size: small;
 }
 </style>
