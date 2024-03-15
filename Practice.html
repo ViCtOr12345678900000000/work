@@ -1,12 +1,19 @@
 <body id="background-change">
+
+
+
     <header class="navbar">
-      <button class="menu-btn">
-        <span class="bar bar-top"></span>
-        <span class="bar bar-middle"></span>
-        <span class="bar bar-bottom"></span>
-      </button>
+        <div id="mysidenav" class="sidenav">
+            <a href="" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="">About</a>
+            <a href="">Services</a>
+            <a href="">Clients</a>
+            <a href="">Contacts</a>
+        </div>
+        <span onclick="openNav()">&equiv;</span>
+        
       <div class="nav-center">
-        <h4>VC STORES</h4>
+        <h4 class="VC">VC STORES</h4>
       </div>
       <div class="nav-right">
               <form action="https://www.google.com/search" method="get">
@@ -18,13 +25,7 @@
         </button>
         </form>
       </div>
-      <nav class="nav-content">
-        <ul>
-          <li><a href="#">Submenu 1</a></li>
-          <li><a href="#">Submenu 2</a></li>
-          <li><a href="#">Submenu 3</a></li>
-        </ul>
-      </nav>
+      
     </header>
     <html>
     
@@ -345,10 +346,14 @@
         text-align: center;
         font-size: small;
     }
-    
-    
+    }
     </style>
+
     <style>
+    h4{
+        text-align: center;
+        margin-left: 50%;
+    }
     .navbar {
       position: fixed;
       top: 0;
@@ -441,4 +446,61 @@
     }
         }
     </style>
+
+<style>
+    span{
+        font-size:xx-large;
+        font-weight: 600;
+        text-align: left;
+        
+    }
+    span:hover{
+        cursor: pointer;
+    }
+    .sidenav{
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index:1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        padding-top:60px;
+        transition: 0.5s;
+    }
+    .sidenav a {
+        padding :8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+    .sidenav a:hover{
+        color: white;
+    }
+    .sidebar.closebtn{
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50%;
+    }
+    
+</style>
+<script>
+    function openNav(){
+        document.getElementById("mysidenav").style.width="250px";
+        document.getElementById("mysidenav").style.backgroundColor="white";
+        document.getElementById("mysidenav").style.opacity="0.95";
+        document.getElementById("main").style.marginLeft="250px";
+        
+    }
+    function closeNav(){
+        document.getElementById("mysidenav").style.width="0";
+        document.getElementById("main").style.marginLeft="0";
+        
+    }
+</script>
     
