@@ -92,7 +92,7 @@
         height: 500px;
         text-align: ;
         margin-left:-30% ;
-        margin-top:-250% ;
+        margin-top:-290% ;
         text-align: center;
     } 
     .enter{
@@ -105,7 +105,7 @@
         width: 300px;
         height: 100px;
         margin-top: 200%;
-        margin-left: ;
+        margin-left:10px ;
         
     }
     .enter{
