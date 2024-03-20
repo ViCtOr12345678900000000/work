@@ -91,8 +91,9 @@
         width: 430px;
         height: 500px;
         text-align: ;
-        margin-left: ;
-        margin-top: ;
+        margin-left:-30% ;
+        margin-top:-250% ;
+        text-align: center;
     } 
     .enter{
         margin-left: 120%;
@@ -100,18 +101,20 @@
         
     }
     .container{
-        text-align: center;
+        text-align: left;
         width: 300px;
         height: 100px;
-        margin-top: 160px;
-        margin-left: 200px;
+        margin-top: 200%;
+        margin-left: ;
         
     }
-    .container p{
-        
+    .enter{
+        margin-left: 100%;
+        margin-top: 20px;
     }
+    
     body{
-        text-align: center;
+        text-align: left;
     }
     }
 </style>
