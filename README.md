@@ -27,8 +27,8 @@
             }
             .container img{
                 width: 100%;
-                height:800px;
-                margin-top: -100%;
+                height:400px;
+                margin-top: -130%;
             }
             h3{
         font-weight: bolder;
