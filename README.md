@@ -1,76 +1,90 @@
-<html>
-    <body>
-        <div class="enter">
-            <button><p>Enter &rightarrow;</p></button>
-            </div>
-            <div class="container">
-                <p><h3>Welcome to VC-STORES</h3></p>
-                <p>Get all clothing Accessories and clothing items at affordable prices from the one and the only VC-STORES</p>
-                <button><p>Enter &rightarrow;</p></button>
-                <button><p>Enter &rightarrow;</p></button>
-                <img src="https://img.freepik.com/free-vector/flat-design-clothing-store-logo-design_23-2149496415.jpg">
-            </div>
-            
-    </body>
-    <style>
-        @media  (orientation:portrait) {
-            .enter{
-                margin-left: 80%;
-                margin-top: 10%;
-            }
-            .container{
-                width: 100%;
-                height: 300px;
-                margin-top: 100%;
-                text-align: center;
-
-            }
-            .container img{
-                width: 100%;
-                height:400px;
-                margin-top: -130%;
-            }
-            h3{
-        font-weight: bolder;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-size: x-large;
+<body id="background-change">
+    <h1 class="welcome-text">Welcome!</h1>
+    <div class="enter">
+        <form action="Practice.html" target="_blank">
+        <button type="submit" >Enter</button>
+        </form>
+    </div>
+</body>
+<style>
+    body{
+        background-image:
+    url("https://i.pinimg.com/originals/bc/3d/b4/bc3db4f51517257764fb80ef2f15b724.jpg");
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-name: changeBackground ;
+        text-align:center;
     }
+    .form{
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 50px;
+        margin-right: 5px;
+    }
+    
     p{
-        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: xx-large;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
     }
-
-    button:hover{
-        cursor: pointer;
+    
+    input{
+        border-radius: 50px;
+        width: 200px;
+        height: 20px;
+        background-color: inherit;
+        text-align: center;
+        color: black;
+        
+        
+        
+    }
+    .repository-link{
+    display:none;
     }
     button{
-        color: black;
+        border-radius: 20px;
         background-color: inherit;
-        width: 100px;
+        color: black;
+        width: 200px;
+        margin-top:50%;
+        height: 80px;
+        
     }
-        }
-
-
-        @media  (orientation:landscape){
-            .container img{
-        width: 430px;
-        height: 500px;
-        text-align: left;
-        margin-left: 230%;
-        margin-top: -105%;
+    button:hover{
+        cursor:pointer;
+    }
+    hr{
+        margin-top: 70%;
+        text-align: center;
+        
+        
+    }
+    .bottom{
+        text-align: center;
+        margin-top: 100px;
+        
+        
     }
     .enter{
-        margin-left: 90%;
+        text-align: center;
         margin-top: 20px;
-        
-    } 
-    .container{
-        text-align: right;
-        width: 300px;
-        height: 100px;
-        margin-top: 160px;
-        margin-left: 200px;
-        
+        margin-right: 5px;
+        margin-top: 20%;
     }
-        }
-    </style>
-</html>
+    .welcome-text {
+    font-size: 4em;
+    color: blue;
+    animation: animateText 3s ease-in-out infinite;
+  }
+
+  @keyframes animateText {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+</style>
