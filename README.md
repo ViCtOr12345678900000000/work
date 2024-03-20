@@ -115,9 +115,9 @@
     
     body{
         text-align: center;
-        overflow: hidden;
+        
        
-        margin: 0;
+        margin: ;
     }
     }
 </style>
