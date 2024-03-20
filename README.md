@@ -1,61 +1,36 @@
-
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
+<html>
     <body>
-    <div class="enter">
-    <button><p>Enter &rightarrow;</p></button>
-    </div>
-    <div class="container">
-        <p><h3>Welcome to VC-STORES</h3></p>
-        <p>Get all clothing Accessories and clothing items at affordable prices from the one and the only VC-STORES</p>
-        <button><p>Enter &rightarrow;</p></button>
-        <button><p>Enter &rightarrow;</p></button>
-        <img src="https://img.freepik.com/free-vector/flat-design-clothing-store-logo-design_23-2149496415.jpg">
-    </div>
-    
-     
-</body>
-</html>
+        <div class="enter">
+            <button><p>Enter &rightarrow;</p></button>
+            </div>
+            <div class="container">
+                <p><h3>Welcome to VC-STORES</h3></p>
+                <p>Get all clothing Accessories and clothing items at affordable prices from the one and the only VC-STORES</p>
+                <button><p>Enter &rightarrow;</p></button>
+                <button><p>Enter &rightarrow;</p></button>
+                <img src="https://img.freepik.com/free-vector/flat-design-clothing-store-logo-design_23-2149496415.jpg">
+            </div>
+            
+    </body>
+    <style>
+        @media  (orientation:portrait) {
+            .enter{
+                margin-left: 80%;
+                margin-top: 10%;
+            }
+            .container{
+                width: 100%;
+                height: 300px;
+                margin-top: 100%;
+                text-align: center;
 
-<style>
-   
-    body{
-        
-        
-        background-color: white;
-    }
-    .container img{
-        width: 430px;
-        height: 500px;
-        text-align: left;
-        margin-left: 230%;
-        margin-top: -110%;
-    }
-    .enter{
-        margin-left: 90%;
-        margin-top: 20px;
-        
-    }
-    button:hover{
-        cursor: pointer;
-    }
-    .container{
-        text-align: right;
-        width: 300px;
-        height: 100px;
-        margin-top: 160px;
-        margin-left: 200px;
-        
-    }
-    button{
-        color: black;
-        background-color: inherit;
-        width: 100px;
-    }
-    h3{
+            }
+            .container img{
+                width: 100%;
+                height:800px;
+                margin-top: -100%;
+            }
+            h3{
         font-weight: bolder;
         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-size: x-large;
@@ -63,19 +38,31 @@
     p{
         font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
-    @media only screen and (max-width:1115px){
-        .container img{
+
+    button:hover{
+        cursor: pointer;
+    }
+    button{
+        color: black;
+        background-color: inherit;
+        width: 100px;
+    }
+        }
+
+
+        @media  (orientation:landscape){
+            .container img{
         width: 430px;
         height: 500px;
         text-align: left;
         margin-left: 230%;
-        margin-top: -110%;
-    } 
+        margin-top: -105%;
+    }
     .enter{
-        margin-left: 120%;
+        margin-left: 90%;
         margin-top: 20px;
         
-    }
+    } 
     .container{
         text-align: right;
         width: 300px;
@@ -84,40 +71,6 @@
         margin-left: 200px;
         
     }
-    }
-
-    @media screen and (orientation:portrait){
-        .container img{
-        width: 430px;
-        height: 500px;
-        text-align: ;
-        margin-left:-30% ;
-        margin-top:-290% ;
-        text-align: center;
-    } 
-    .enter{
-        margin-left: 120%;
-        margin-top: 20px;
-        
-    }
-    .container{
-        text-align: left;
-        width: 300px;
-        height: 100px;
-        margin-top: 200%;
-        margin-left:10px ;
-        
-    }
-    .enter{
-        margin-left: 100%;
-        margin-top: 20px;
-    }
-    
-    body{
-        text-align: center;
-        
-       
-        margin: ;
-    }
-    }
-</style>
+        }
+    </style>
+</html>
