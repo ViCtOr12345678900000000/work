@@ -114,7 +114,11 @@
     }
     
     body{
-        text-align: left;
+        text-align: center;
+        overflow: hidden;
+        width: 100vw;
+        height: 1oovh;
+        margin: 0;
     }
     }
 </style>
