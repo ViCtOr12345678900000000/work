@@ -187,7 +187,7 @@ button{
     position: absolute;
     font-size: 150px;
     font-weight: 600;
-    color: white;  
+    color: beige;  
     bottom: 400px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    }
@@ -226,7 +226,7 @@ button{
     font-weight: 600;
     bottom: 150px;
     margin-left: 30px;
-    color:  white; 
+    color:  beige; 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
     .container3{
@@ -250,7 +250,7 @@ button{
     font-weight: 600;
     bottom: 200px;
     margin-left: 40px;
-    color:  white ;
+    color:  beige;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
     .word4{
@@ -258,7 +258,7 @@ button{
     font-size: 150px;
     font-weight: 600;
     bottom: -3200px;
-    color: white;
+    color: beige;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
     .word5{
@@ -266,7 +266,7 @@ button{
     font-size: 150px;
     font-weight: 600;
     bottom: -4900px;
-    color: white;
+    color: beige;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
     .word6{
@@ -274,7 +274,7 @@ button{
   font-size: 150px;
   font-weight: 600;
   bottom: -6000px;
-  color: white;
+  color: beige;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
     a{
@@ -285,7 +285,7 @@ button{
 <script>
     function openNav(){
         document.getElementById("mysidenav").style.width="300px";
-        document.getElementById("mysidenav").style.backgroundColor=" white ";
+        document.getElementById("mysidenav").style.backgroundColor=" beige ";
         document.getElementById("mysidenav").style.opacity="0.95";
         document.getElementById("main").style.marginLeft="250px";
         
@@ -298,9 +298,40 @@ button{
 </script>
 
 
-<div class="container">
+<div class="container" id="slider">
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYkKRV1D4nOqHlEgyYGs9tC3iNPvJ0JjuvQrHpm9KrwLb_g3DfDdjZztpZ&s=10" style="width: 150%; margin-top: 20%;">
+    
+    <img src="https://hourscollection.com/cdn/shop/products/Black-Blank3_1_360x.png?v=1665434810" style="width: 150%; margin-top: 20%;">
+    
+    <img src="https://i.etsystatic.com/39731202/r/il/ae99d3/4611514712/il_570xN.4611514712_cifi.jpg" style="width: 150%; margin-top: 20%;">
     <div class="word1">HOODIES<br/><p>Enjoy the most comfortable hoodies</p><button class="button" type="submit">Shop Now </button></div>
+    
+    <script>
+  const images = document.getElementById('slider').querySelectorAll('img');
+  let currentImageIndex = 0;
+
+  function changeImage() {
+    images[currentImageIndex].classList.remove('show');
+    currentImageIndex = (currentImageIndex + 1) % images.length;
+    images[currentImageIndex].classList.add('show');
+  }
+
+  setInterval(changeImage, 2000); // Change image every 3 seconds
+</script>
+
+<style>
+#slider img {
+    display: none;
+  width:150%;
+  height:120%;
+ 
+  }
+  
+  #slider .show {
+    display: block;
+  }
+  </style>
+
 </div>
 <div class="container2">
     <div class="smallcontainer1">
@@ -335,5 +366,7 @@ button{
 <br/>
 <div class="container6">
     <img src="https://www.byrdie.com/thmb/ePWtANoGUlG8UTdERI75WaztLYo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1489075884-0f9b1fa6d26b456e89139c1ad4e5de14.jpg" style="width: 160%; margin-top: ;">
+    
+    
     <div class="word6">BEST ON BOTH FEET<br/><p> Rock your way to the top</p><button class="button" type="submit">Shop Now </button></div>
 </div>
