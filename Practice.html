@@ -422,14 +422,19 @@ button{
 }
   </style>
 
-<div class="lastcontainer" style="background-color: beige; width: 160%; height: 60%;"><br/>
-  <p style="font-size: 100px; color: black; text-align: center;">Unlock 10% Savings</p>
-  <p style="font-size:50px; color:black; text-align: center; ">Stay In The Loop + Enjoy 10% Off Your First Order</p><input type="text" id="search" name="q" placeholder="Enter Email Here" style="width: 70%; height: 250px; border-radius: 0px; text-align: center; margin-left: 15%">
-</div>
+<div class="lastcontainer" ><br/>
+    <p class="unlock" >Unlock 10% Savings</p>
+    <p class="unlock1" >Stay In The Loop + Enjoy 10% Off Your First Order</p><input class="emailbox" type="text" id="search" name="q" placeholder="Enter Email Here">
+  </div>
 
 <div>
   
-  <p id="changing-text" style="font-size: 500px; margin-bottom:-840vh; color: black; bottom:0 ; position:  absolute ; ">Find Us Below &downarrow; </p>
+  <p id="changing-text">Find Us Below &downarrow; </p>
+  <style>
+    #changing-text{
+        font-size: 500px; margin-bottom:-840vh; color: black; bottom:0 ; position:  absolute ; 
+    }
+  </style>
   
 <script>
 function changeText() {
@@ -443,14 +448,14 @@ changeText(); // Initiate the text change
 </script>
 
   
-  <div style="width:160%; height: 40%; background-color: black; bottom: 0; position:absolute; margin-bottom:-900vh;">
-    <p></p>
-  </div>
+  
+    <iframe class="map"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.604802968083!2d6.833550873644896!3d5.769863531464873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1043b3ff0dc492cb%3A0x90fbd7d2a6829e63!2sChukwuemeka%20Odumegwu%20Ojukwu%20University!5e0!3m2!1sen!2sng!4v1711139735502!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
 </div>
 
 
 
-<p style="font-size: 100px; font-weight: 600; color: #111; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">SHOP BOTTOMS</p>
+<p class="shopbottom" >SHOP BOTTOMS</p>
           
     <div class="scrolling-container" style="width: 160%; background-color: inherit;">
     <div class="firstimage">
@@ -557,6 +562,9 @@ changeText(); // Initiate the text change
 </html>
  
 <style>
+.map{
+    width:160%; height: 40%; background-color: inherit; bottom: 0; position:absolute; margin-bottom:-900vh;
+}
 
 div.scrolling-container{
                 overflow:scroll hidden ;
@@ -573,6 +581,166 @@ div.scrolling-container{
                 box-shadow: 0 5px 15px;
                 width: 850px;
                 height: 950px;
+            }
+            .unlock{
+                font-size: 100px;
+                color: #111;
+                text-align: center;
+            }
+            .unlock1{
+                font-size: 50px;
+                color: black;
+                text-align: center;
+            }
+            .lastcontainer{
+                background-color: beige;
+                width: 160%;
+                height: 40%;
+            }
+            .emailbox{
+                width: 70%;
+                height: 200px;
+                border-radius: 0px;
+                text-align: center;
+                margin-left: 15%;
+            }
+            .shopbottom{
+                font-size: 100px;
+                font-weight: 600;
+                color: #111;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            .newandrestock{
+                    width: 670%; padding: 20px; height: 550px;
+                }
+            @media only screen and (orientation:landscape){
+                .newandrestock{
+                    width: 670%; padding: 20px; height: 550px;
+                }
+                .unlock{
+                font-size: 50px;
+                color: #111;
+                text-align: center;
+            }
+            .unlock1{
+                font-size: 20px;
+                color: black;
+                text-align: center;
+            }
+            .lastcontainer{
+                background-color: beige;
+                width: 160%;
+                height: 100%;
+            }
+            .emailbox{
+                width: 40%;
+                height: 100px;
+                border-radius: 0px;
+                text-align: center;
+                margin-left: 30%;
+            }
+            .navbar2{
+  background-color: beige;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 95%;
+  height: 25px;
+  padding: 30px;
+  
+}
+
+/* Style the links inside the navigation bar */
+.navbar2 a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 10px 14px;
+  text-decoration: none;
+  font-size: 30px;
+  margin-right:250px;
+  margin-bottom: -40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      height: 50px;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: white;
+      z-index:1;
+      
+    }
+    input{
+        width: 170px;
+        text-align: right;
+        height: 30px;
+        margin-right: 30px;
+        border-radius:15px;
+        font-size: 20px;
+        
+    }
+    span{
+        font-size:200px;
+        font-weight: 100;
+        text-align: left;
+        
+    }
+    .container{
+        position:relative;
+        text-align: center;
+        color: brown;
+        width: 110%;
+        height: 300%;
+        margin-bottom: 100px;
+    }
+    .word1{
+    position: absolute;
+    font-size: 150px;
+    font-weight: 600;
+    color: black;  
+    bottom: 400px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   }
+   p{
+    font-size: 40px;
+    text-align: left;
+    color:  brown ;
+   }
+   .word4{
+        position: absolute;
+    font-size: 150px;
+    font-weight: 600;
+    bottom: -3600px;
+    color: beige;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .word6{
+  position: absolute;
+  font-size: 150px;
+  font-weight: 600;
+  bottom: -6300px;
+  color: beige;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.shopbottom{
+                font-size: 50px;
+                font-weight: 600;
+                color: #111;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            #changing-text{
+        font-size: 500px; margin-bottom:-3500vh; color: black; bottom:0 ; position:  absolute ; 
+    }
+    .map{
+    width:160%; height: 160%; background-color: inherit; bottom: 0; position:absolute; margin-bottom:-3800vh;
+}
             }
 </style>
 
